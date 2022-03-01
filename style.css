@@ -9,3 +9,61 @@ body {
 }
 
 /* --------------------------------------------- */
+/* START */
+
+.main {
+    border: 3px solid greenyellow;
+}
+
+/* --------------------------------------------- */
+/* MAIN CONTAINER */
+
+.wrapper {
+    display: flex;
+}
+
+/* --------------------------------------------- */
+/* COLONNA SX */
+
+.col-left {
+    border: 3px solid royalblue;
+    flex-grow: 1;
+}
+
+.left_profile-top-section {
+
+}
+
+.left_notification-silent {
+
+}
+
+.left_search-bar {
+
+}
+
+.left_all-chat {
+
+}
+
+/* --------------------------------------------- */
+/* COLONNA DX */
+
+.col-right {
+    border: 3px solid red;
+    flex-grow: 2.5;
+}
+
+.right_profile-top-chat {
+
+}
+
+.right_main-chat {
+
+}
+
+.right_write-bottom-chat {
+
+}
+
+/* --------------------------------------------- */

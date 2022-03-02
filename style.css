@@ -27,23 +27,38 @@ body {
 
 .col-left {
     border: 3px solid royalblue;
-    flex-grow: 1;
+    flex-grow: 1;    
 }
 
 .left_profile-top-section {
-
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
 }
 
 .left_notification-silent {
-
+    background-color: #8EDAFB;
+    display: flex;
 }
 
 .left_search-bar {
-
+    background-color: #FAFAFA;
+    display: flex;
 }
 
 .left_all-chat {
+    border: 1px solid red;
+}
 
+.selected-chat {
+    background-color: #EAEBEB;
+    display: flex;
+    flex-direction: row;
+}
+
+.other-chat {
+    display: flex;
+    flex-direction: row;
 }
 
 /* --------------------------------------------- */
@@ -55,15 +70,21 @@ body {
 }
 
 .right_profile-top-chat {
-
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
 }
 
 .right_main-chat {
-
+    background-color: #E4DDD5;
+    display: flex;
+    justify-content: space-around;
 }
 
 .right_write-bottom-chat {
-
+    background-color: #F3EEEB;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* --------------------------------------------- */

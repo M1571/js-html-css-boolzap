@@ -32,10 +32,12 @@
                 <div class="left_profile-top-section">
                     <div>
                         <img src="/img/img1.png 01-52-27-677.png" alt="">
-                        <h5>Elena</h5>
+                        <span>Elena</span>
                     </div>
                     <div>
-                        <div>Icona caricamento chat e 3 puntini</div>
+                        <i class="fas fa-circle-notch"></i>
+                        <i class="fas fa-comment-alt"></i>
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
 
@@ -43,18 +45,22 @@
                 <!-- 40 -->
 
                 <div class="left_notification-silent">                  
-                    <div>Icona silenzioso</div> 
-                    <h6>Ricevi notifiche di nuovi utenti</h6>
-                    <p>Attiva notifiche desktop</p>
+                    <div>
+                        <i class="fas fa-bell-slash"></i>
+                    </div> 
+                    <span>Ricevi notifiche di nuovi utenti</span>
+                    <a href="#">Attiva notifiche desktop</a>
                 </div>
 
                 <!-- --------------------------------------------- -->
                 <!-- 50 -->
 
                 <div class="left_search-bar">                  
-                    <div>Icona lente</div>
                     <div>
-                        <p>Cerca o inizia una nuova chat</p>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="search">
                     </div>
                 </div>
 
@@ -62,24 +68,34 @@
                 <!-- 60 -->
 
                 <div class="left_all-chat"> 
+
+                    <!-- <div v-for="(contact, index) in filterContacts" @click="getUser(contact)" class="person">
+                        <img :src="getAvatarPhoto(contact)" alt="contact.name">
+                        <div class="name-person">
+                            <span>{{contact.name}}</span>
+                            <span>{{lastMessage(contact)}}</span>
+                        </div>
+                    </div> -->
+
                     <div class="selected-chat">
                         <div>
                             <img src="/img/img2.png 01-52-29-960.png" alt="">
                             <div>
-                                <h5>Michele</h5>
-                                <p>Tutto fatto.</p>
+                                <span>Michele</span>
+                                <span>Tutto fatto.</span>
                             </div>
                         </div>
                         <div>
                             <p>28/02/2022 12:07</p>
                         </div>                  
                     </div> 
+                    
                     <div class="other-chat">
                         <div>
                             <img src="/img/img3.png 01-52-19-023.png" alt="">
                             <div>
-                                <h5>Fabio</h5>
-                                <p>Mi piacerebbe, ma devo andare a fare la spesa.</p>
+                                <span>Fabio</span>
+                                <span>Mi piacerebbe, ma devo andare a fare la spesa.</span>
                             </div>
                         </div>
                         <div>
@@ -101,10 +117,20 @@
                 <div class="right_profile-top-chat">
                     <div>
                         <img src="/img/img2.png 01-52-29-960.png" alt="">
-                        <h5>Michele</h5>
+
+                        <!-- <div class="receiver-info">
+                            <span>{{selectedContact.name}}</span>
+                            <p>Ultimo accesso oggi alle</p>
+                        </div> -->
+
+                        <span>Michele</span>
                         <p>Ultimo accesso 28/02/2022 12:07</p>
                     </div>
-                    <div>Icone cerca allega e 3 puntini</div>
+                    <div>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
                 </div>
 
                 <!-- --------------------------------------------- -->
@@ -115,13 +141,22 @@
                     <div>Testo inviato</div>
                 </div>
 
+                <!-- <div class="chat">
+                    <div v-for="text in selectedContact.messages" class="chat-area">
+                        <div :class="text.status">
+                            <p>{{text.message}}</p>
+                            <span id="data-chat">{{text.date}}</span>
+                        </div>
+                    </div>
+                </div> -->
+
                 <!-- --------------------------------------------- -->
                 <!-- 100 -->
 
                 <div class="right_write-bottom-chat">
-                    <div>Icona emoji</div>
-                    <div>Write a message bar</div>
-                    <div>Icona vocali</div>
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyUp.enter="addMessage()">
+                    <i class="fas fa-microphone"></i>                  
                 </div>
 
             </div>

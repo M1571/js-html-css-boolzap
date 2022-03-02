@@ -16,19 +16,22 @@ body {
 }
 
 /* --------------------------------------------- */
-/* MAIN CONTAINER */
+/* 10 MAIN CONTAINER */
 
 .wrapper {
     display: flex;
 }
 
 /* --------------------------------------------- */
-/* COLONNA SX */
+/* 20 COLONNA SX */
 
 .col-left {
     border: 3px solid royalblue;
     flex-grow: 1;    
 }
+
+/* --------------------------------------------- */
+/* 30 */
 
 .left_profile-top-section {
     background-color: #EAEAEA;
@@ -36,15 +39,24 @@ body {
     justify-content: space-between;
 }
 
+/* --------------------------------------------- */
+/* 40 */
+
 .left_notification-silent {
     background-color: #8EDAFB;
     display: flex;
 }
 
+/* --------------------------------------------- */
+/* 50 */
+
 .left_search-bar {
     background-color: #FAFAFA;
     display: flex;
 }
+
+/* --------------------------------------------- */
+/* 60 */
 
 .left_all-chat {
     border: 1px solid red;
@@ -62,12 +74,15 @@ body {
 }
 
 /* --------------------------------------------- */
-/* COLONNA DX */
+/* 70 COLONNA DX */
 
 .col-right {
     border: 3px solid red;
     flex-grow: 2.5;
 }
+
+/* --------------------------------------------- */
+/* 80 */
 
 .right_profile-top-chat {
     background-color: #EAEAEA;
@@ -75,11 +90,17 @@ body {
     justify-content: space-between;
 }
 
+/* --------------------------------------------- */
+/* 90 */
+
 .right_main-chat {
     background-color: #E4DDD5;
     display: flex;
     justify-content: space-around;
 }
+
+/* --------------------------------------------- */
+/* 100 */
 
 .right_write-bottom-chat {
     background-color: #F3EEEB;

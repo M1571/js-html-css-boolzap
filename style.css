@@ -6,14 +6,15 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(#459589 100px, #e6e3de 100px, #d1d7db calc(100% - 150px));
+    font-size: 0.8em;
+    background: linear-gradient(#459589 125px, #D5DBD9 125px, #D5DBD9 calc(100% - 150px));
 }
 
 /* --------------------------------------------- */
 /* START */
 
 .main {
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -27,6 +28,7 @@ img {
 
 i {
     color: #B1B1B1;
+    font-size: 1.3em;
 }
 
 i:hover {
@@ -34,28 +36,36 @@ i:hover {
     color: #69686A;
 }
 
+.text-grey {
+    color: #838383;
+}
+
 /* --------------------------------------------- */
 /* 10 MAIN CONTAINER */
 
 .wrapper {
-    border: 3px solid yellow;
+    border: 1px solid #B1B1B1;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     width: 1100px;
     height: calc(100% - 80px);
+    border-radius: 21px;
 }
 
 /* --------------------------------------------- */
 /* 20 COLONNA SX */
 
 .col-left {
-    border: 3px solid royalblue;
-    /* flex-grow: 1; */
+    /* border: 3px solid royalblue; */
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /* --------------------------------------------- */
-/* 30 */
+/* 30 ACCOUNT */
 
 .left_profile-top-section {
     background-color: #EAEAEA;
@@ -65,6 +75,7 @@ i:hover {
     height: 60px;
     padding: 10px;
     align-items: center;
+    border-top-left-radius: 20px;
 }
 
 .profile-top-sx {
@@ -79,7 +90,7 @@ i:hover {
 }
 
 /* --------------------------------------------- */
-/* 40 */
+/* 40 ATTIVA NOTIFICHE */
 
 .left_notification-silent {
     background-color: #8EDAFB;
@@ -88,10 +99,26 @@ i:hover {
     height: 70px;
     padding: 10px;
     align-items: center;
+    gap: 10px;
+    /* border-radius: 10px; */
+}
+
+.silent-bell {
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #8EDAFB;
+}
+
+.silent-icon {
+    display: flex;
+    flex-direction: column;
 }
 
 /* --------------------------------------------- */
-/* 50 */
+/* 50 CERCA CHAT */
 
 .left_search-bar {
     background-color: #FAFAFA;
@@ -113,13 +140,17 @@ i:hover {
     padding-left: 40px;
     line-height: 35px;
     border: none;
+    border-radius: 5px;
 }
 
 /* --------------------------------------------- */
-/* 60 */
+/* 60 TUTTE LE CHAT */
 
 .left_all-chat {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    overflow-y: auto;
 }
 
 .selected-chat {
@@ -129,6 +160,15 @@ i:hover {
     width: 100%;
     height: 70px;
     padding: 10px;
+    /* border-radius: 5px; */
+}
+
+.wrap-chat-1 {
+    border: 1px solid black;
+}
+
+.chat-1 {
+    border: 1px solid red;
 }
 
 .other-chat {
@@ -143,14 +183,16 @@ i:hover {
 /* 70 COLONNA DX */
 
 .col-right {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* flex-grow: 2.5; */
-    flex-grow: 1;
+    flex-grow: 6;
     height: 100%;
+    border-left: 2px solid #D3D3D3;
+    border-top-right-radius: 20px;
 }
 
 /* --------------------------------------------- */
-/* 80 */
+/* 80 PROFILO CHAT SELEZIONATA */
 
 .right_profile-top-chat {
     background-color: #EAEAEA;
@@ -160,10 +202,11 @@ i:hover {
     height: 60px;
     padding: 10px;
     align-items: center;
+    border-top-right-radius: 20px;
 }
 
 .chat-top-sx {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 }
 
@@ -174,7 +217,7 @@ i:hover {
 }
 
 /* --------------------------------------------- */
-/* 90 */
+/* 90 CHAT SELEZIONATA */
 
 .right_main-chat {
     background-color: #E4DDD5;
@@ -184,7 +227,7 @@ i:hover {
 }
 
 /* --------------------------------------------- */
-/* 100 */
+/* 100 SCRIVI UN MESSAGGIO */
 
 .right_write-bottom-chat {
     background-color: #F3EEEB;
@@ -193,6 +236,18 @@ i:hover {
     width: 100%;
     height: 60px;
     padding: 10px 20px;
+    align-items: center;
+    gap: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.input-write {
+    width: 100%;
+    padding-left: 15px;
+    /* line-height: 35px; */
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
 }
 
 /* --------------------------------------------- */

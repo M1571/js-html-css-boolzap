@@ -27,7 +27,7 @@
             <div class="col-left">
 
                 <!-- --------------------------------------------- -->
-                <!-- 30 -->
+                <!-- 30 ACCOUNT -->
 
                 <div class="left_profile-top-section">
                     <div class="profile-top-sx">
@@ -42,18 +42,18 @@
                 </div>
 
                 <!-- --------------------------------------------- -->
-                <!-- 40 -->
+                <!-- 40 ATTIVA NOTIFICHE -->
 
                 <div class="left_notification-silent">                  
-                    <i class="fas fa-bell-slash"></i>
+                    <i class="fas fa-bell-slash silent-bell"></i>
                     <div class="silent-icon">
                         <span>Ricevi notifiche di nuovi utenti</span>
-                        <a href="#">Attiva notifiche desktop</a>
+                        <a class="text-grey" href="#">Attiva notifiche desktop</a>
                     </div>
                 </div>
 
                 <!-- --------------------------------------------- -->
-                <!-- 50 -->
+                <!-- 50 CERCA CHAT -->
 
                 <div class="left_search-bar">                  
                     <i class="fas fa-search icon-search"></i>
@@ -61,7 +61,7 @@
                 </div>
 
                 <!-- --------------------------------------------- -->
-                <!-- 60 -->
+                <!-- 60 TUTTE LE CHAT -->
 
                 <div class="left_all-chat"> 
 
@@ -74,11 +74,11 @@
                     </div> -->
 
                     <div class="selected-chat">
-                        <div>
+                        <div class="wrap-chat-1">
                             <img src="/img/img2.png 01-52-29-960.png" alt="">
-                            <div>
-                                <span>Michele</span>
-                                <span>Tutto fatto.</span>
+                            <div class="chat-1">
+                                <span>Donaldo</span>
+                                <span class="text-grey">Tutto fatto.</span>
                             </div>
                         </div>
                         <div>
@@ -91,7 +91,7 @@
                             <img src="/img/img3.png 01-52-19-023.png" alt="">
                             <div>
                                 <span>Fabio</span>
-                                <span>Mi piacerebbe, ma devo andare a fare la spesa.</span>
+                                <span class="text-grey">Mi piacerebbe, ma devo andare a fare la spesa.</span>
                             </div>
                         </div>
                         <div>
@@ -108,20 +108,20 @@
             <div class="col-right">
 
                 <!-- --------------------------------------------- -->
-                <!-- 80 -->
+                <!-- 80 PROFILO CHAT SELEZIONATA -->
 
                 <div class="right_profile-top-chat">
                     <div class="chat-top-sx">
                         <img src="/img/img2.png 01-52-29-960.png" alt="">
-
-                        <!-- <div class="receiver-info">
-                            <span>{{selectedContact.name}}</span>
-                            <p>Ultimo accesso oggi alle</p>
-                        </div> -->
-
-                        <span>Michele</span>
-                        <p>Ultimo accesso 28/02/2022 12:07</p>
+                        <span>Donaldo</span>
+                        <p class="text-grey">Ultimo accesso 28/02/2022 12:07</p>
                     </div>
+
+                    <!-- <div class="receiver-info">
+                        <span>{{selectedContact.name}}</span>
+                        <p>Ultimo accesso oggi alle</p>
+                    </div> -->
+
                     <div class="chat-top-dx">
                         <i class="fas fa-search"></i>
                         <i class="fas fa-paperclip"></i>
@@ -130,7 +130,7 @@
                 </div>
 
                 <!-- --------------------------------------------- -->
-                <!-- 90 -->
+                <!-- 90 CHAT SELEZIONATA -->
 
                 <div class="right_main-chat">
                     <div>Testo ricevuto</div>
@@ -147,11 +147,11 @@
                 </div> -->
 
                 <!-- --------------------------------------------- -->
-                <!-- 100 -->
+                <!-- 100 SCRIVI UN MESSAGGIO -->
 
                 <div class="right_write-bottom-chat">
                     <i class="far fa-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyUp.enter="addMessage()">
+                    <input class="input-write" type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyUp.enter="addMessage()">
                     <i class="fas fa-microphone"></i>                  
                 </div>
 

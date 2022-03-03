@@ -153,6 +153,9 @@ i:hover {
     overflow-y: auto;
 }
 
+/* --------------------------------------------- */
+/* 61 CHAT SELEZIONATA */
+
 .selected-chat {
     background-color: #EAEBEB;
     display: flex;
@@ -163,13 +166,16 @@ i:hover {
     /* border-radius: 5px; */
 }
 
-.wrap-chat-1 {
+.wrap_chat-1 {
     border: 1px solid black;
 }
 
-.chat-1 {
+.spec_chat-1 {
     border: 1px solid red;
 }
+
+/* --------------------------------------------- */
+/* 62 CHAT SECONDARIA */
 
 .other-chat {
     display: flex;

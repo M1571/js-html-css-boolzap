@@ -226,6 +226,8 @@ i:hover {
 .chat-top-sx {
     /* border: 1px solid black; */
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .chat-top-dx {
